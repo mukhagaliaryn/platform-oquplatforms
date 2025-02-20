@@ -1,6 +1,6 @@
 <p align="center">
   <img 
-    src="/templates/static/images/logo.svg" 
+    src="/public/logo_light.svg" 
     alt="OQU platforms Logo" width="120">
 </p>
 <h3 align="center">OQU platforms</h3>
