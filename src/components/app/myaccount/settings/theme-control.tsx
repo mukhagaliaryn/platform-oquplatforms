@@ -22,24 +22,24 @@ export default function ThemeControl() {
             </DropdownMenuTrigger>
             <DropdownMenuContent className="w-36">
                 <DropdownMenuRadioGroup value={value} onValueChange={setValue}>
-                    <DropdownMenuRadioItem 
-                        value="system" 
+                    <DropdownMenuRadioItem
+                        value="system"
                         onClick={() => setTheme("system")}
                         className="flex gap-2"
                     >
                         <Laptop size={20} />
                         Жүйелік
                     </DropdownMenuRadioItem>
-                    <DropdownMenuRadioItem 
-                        value="light" 
+                    <DropdownMenuRadioItem
+                        value="light"
                         onClick={() => setTheme("light")}
                         className="flex gap-2"
                     >
                         <Sun size={20} />
                         Күндіз
                     </DropdownMenuRadioItem>
-                    <DropdownMenuRadioItem 
-                        value="dark" 
+                    <DropdownMenuRadioItem
+                        value="dark"
                         onClick={() => setTheme("dark")}
                         className="flex gap-2"
                     >

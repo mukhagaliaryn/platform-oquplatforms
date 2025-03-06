@@ -15,7 +15,6 @@ export default function LanguageControl() {
     const pathname = usePathname()
     const params = useParams()
 
-
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     function selectLanguage(event: any) {
         const nextLocale = event.target.id as Locale
@@ -33,19 +32,19 @@ export default function LanguageControl() {
             <DropdownMenuTrigger asChild >
                 <Button variant="outline" className="w-36 justify-start [&_svg]:size-5">
                     <Languages />
-                    {locale === "kz" ? "Қазақша" : locale === "ru" ? "Русский": null}
+                    {locale === "kz" ? "Қазақша" : locale === "ru" ? "Русский" : null}
                 </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent className="w-36">
                 <DropdownMenuRadioGroup value={value} onValueChange={setValue} >
                     {routing.locales.map(item => (
-                        <DropdownMenuRadioItem 
+                        <DropdownMenuRadioItem
                             key={item}
                             id={item}
                             value={item}
                             onClick={selectLanguage}
                         >
-                            {item === "kz" ? "Қазақша" : item === "ru" ? "Русский": null}
+                            {item === "kz" ? "Қазақша" : item === "ru" ? "Русский" : null}
                         </DropdownMenuRadioItem>
                     ))}
                 </DropdownMenuRadioGroup>
@@ -53,4 +52,3 @@ export default function LanguageControl() {
         </DropdownMenu>
     )
 }
-
